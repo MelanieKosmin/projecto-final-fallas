@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fallas València</title>
+    
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/crida.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/crema.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lavishly+Yours&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <h1>Fallas <span>València</span></h1>
+        </a>
+
+        <button class="menu-hamburguesa" id="menuHamburguesa">☰</button>
+
+        <nav id="nav">
+            <ul>
+                <li><a class="nav-link" data-seccion="crida">Crida</a></li>
+                <li><a class="nav-link" data-seccion="galeria">Fallas</a></li>
+                <li><a class="nav-link" data-seccion="crema">Cremà</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO -->
+       <section id="inicio" class="seccion seccion-inicio visible">
+            <div class="inicio-paneles">
+
+                <a class="panel-inicio nav-link" data-seccion="crida">
+                    <img src="multimedia/crida1.jpg" alt="Crida">
+                    <div class="panel-inicio-texto panel-inicio-crida">crida</div>
+                </a>
+
+                <a class="panel-inicio nav-link" data-seccion="galeria">
+                    <img src="multimedia/galeria1.jpg" alt="Fallas">
+                    <div class="panel-inicio-texto panel-inicio-fallas">fallas</div>
+                </a>
+
+                <a class="panel-inicio nav-link" data-seccion="crema">
+                    <img src="multimedia/crema.jpg" alt="Cremà">
+                    <div class="panel-inicio-texto panel-inicio-crema">cremà</div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CRIDA -->
+        <section id="crida" class="seccion seccion-crida">
+            <div class="crida-video-contenedor">
+                <video class="video-crida" autoplay muted loop playsinline>
+                    <source src="multimedia/crida.mov" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+
+                <div class="crida-texto">
+                    <h2>Crida</h2>
+                    <p>
+                        La Crida marca el inicio oficial de las Fallas en València. Desde las Torres de Serranos,
+                        las máximas representantes de la fiesta invitan a toda la ciudad y a quienes la visitan
+                        a sumarse a una celebración llena de arte, tradición, emoción y cultura popular.
+                    </p>
+
+                    <p>
+                        Es uno de los momentos más esperados porque simboliza la apertura de días intensos en los
+                        que València se transforma por completo. La música, las luces, el entusiasmo del público
+                        y el valor simbólico del acto convierten esta ceremonia en una experiencia profundamente
+                        representativa del espíritu fallero.
+                    </p>
+
+                    <p>
+                        La Crida no solo anuncia el comienzo de la fiesta: también expresa la identidad de una
+                        ciudad que vive sus tradiciones con pasión y que abre sus puertas para compartirlas con
+                        vecinos, visitantes y personas de todo el mundo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria" class="seccion">
+            <div class="contenedor-seccion">
+                <div class="galeria-lista">
+
+                    <div class="item-galeria">
+                        <div class="galeria-imagen">
+                            <img src="multimedia/galeria1.jpg" alt="Ninot tradicional">
+                        </div>
+                        <div class="galeria-texto">
+                            <h3>Ninot tradicional</h3>
+                            <p>
+                                Los ninots son una de las expresiones más características de las Fallas.
+                                Cada figura está trabajada con gran detalle y representa escenas de la vida
+                                cotidiana, personajes conocidos o críticas sociales. Su valor artístico y
+                                creativo convierte a cada monumento en una obra única dentro de la fiesta.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="galeria-texto">
+                            <h3>Escena fallera</h3>
+                            <p>
+                                Las escenas falleras combinan humor, tradición y cultura popular.
+                                A través de composiciones llamativas y personajes exagerados, muestran
+                                situaciones que invitan a mirar, pensar y disfrutar. Son una parte esencial
+                                del recorrido por las calles durante las celebraciones.
+                            </p>
+                        </div>
+                        <div class="galeria-imagen">
+                            <img src="multimedia/galeria2.jpg" alt="Escena fallera">
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="galeria-imagen">
+                            <img src="multimedia/galeria3.jpg" alt="Detalle artístico">
+                        </div>
+                        <div class="galeria-texto">
+                            <h3>Detalle artístico</h3>
+                            <p>
+                                Cada falla incluye detalles artísticos que reflejan horas de trabajo,
+                                planificación y dedicación. Los colores, las formas y las terminaciones
+                                muestran el talento de los artistas falleros, que convierten cada monumento
+                                en una pieza visual impactante para vecinos y visitantes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="galeria-texto">
+                            <h3>Color y creatividad</h3>
+                            <p>
+                                El color y la creatividad forman parte del alma de las Fallas.
+                                Cada monumento destaca por su fuerza visual y por la manera en que mezcla
+                                imaginación, sátira y tradición. Esta combinación hace que la experiencia
+                                de recorrer la ciudad durante las fiestas sea inolvidable.
+                            </p>
+                        </div>
+                        <div class="galeria-imagen">
+                            <img src="multimedia/galeria4.jpg" alt="Color y creatividad">
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="galeria-imagen">
+                            <img src="multimedia/galeria5.jpg" alt="Monumento fallero">
+                        </div>
+                        <div class="galeria-texto">
+                            <h3>Monumento fallero</h3>
+                            <p>
+                                Los monumentos falleros sorprenden por su tamaño, su color y el enorme trabajo
+                                que hay detrás de cada composición. Son el resultado de meses de preparación
+                                y representan uno de los mayores atractivos visuales de la fiesta.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="galeria-texto">
+                            <h3>Arte en las calles</h3>
+                            <p>
+                                Durante las Fallas, las calles de València se convierten en una gran exposición
+                                al aire libre. Cada recorrido ofrece nuevas escenas, nuevos detalles y una forma
+                                distinta de vivir el arte popular valenciano.
+                            </p>
+                        </div>
+                        <div class="galeria-imagen">
+                            <img src="multimedia/galeria6.jpg" alt="Arte en las calles">
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="galeria-imagen">
+                            <img src="multimedia/galeria7.jpg" alt="Tradición fallera">
+                        </div>
+                        <div class="galeria-texto">
+                            <h3>Tradición fallera</h3>
+                            <p>
+                                La tradición fallera reúne historia, trabajo artesanal y participación de toda
+                                la comunidad. Cada imagen refleja no solo belleza visual, sino también el valor
+                                cultural de una celebración profundamente arraigada en València.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <div class="galeria-texto">
+                            <h3>Creatividad valenciana</h3>
+                            <p>
+                                La creatividad valenciana se expresa en cada figura, en cada color y en cada
+                                escena representada. Las Fallas combinan imaginación y técnica para crear
+                                monumentos que impactan tanto por su mensaje como por su presencia.
+                            </p>
+                        </div>
+                        <div class="galeria-imagen">
+                            <img src="multimedia/galeria8.jpg" alt="Creatividad valenciana">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CREMA -->
+        <section id="crema" class="seccion seccion-crema">
+            <div class="crema-contenedor">
+                <div class="crema-texto">
+                    <h2>Cremà</h2>
+
+                    <p>
+                        La Cremà es el acto final de las Fallas y uno de los momentos más impactantes
+                        de toda la celebración. Durante esa noche, los monumentos falleros arden en
+                        medio de un ambiente cargado de emoción, despedida y espectáculo.
+                    </p>
+
+                    <p>
+                        Después de días de fiesta, música, color y tradición, el fuego marca el cierre
+                        de un ciclo. Es un instante muy esperado porque reúne a vecinos, visitantes y
+                        comisiones falleras en torno a una experiencia única.
+                    </p>
+                </div>
+
+                <div class="crema-video">
+                    <video class="video-crema" autoplay muted loop playsinline>
+                        <source src="multimedia/crema.mov" type="video/mp4">
+                        Tu navegador no soporta video.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

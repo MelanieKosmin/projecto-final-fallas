@@ -1,0 +1,80 @@
+.contacto-fondo{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.contacto-superpuesto{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.formulario-contenedor{
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 25px;
+}
+
+.formulario-contenedor h2{
+    text-align: center;
+    color: #ef4135;
+    margin-bottom: 15px;
+}
+
+.texto-contacto{
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form label{
+    font-weight: bold;
+}
+
+input,
+textarea{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    resize: none;
+}
+
+button[type="submit"]{
+    padding: 12px;
+    border: none;
+    background-color: #ef4135;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.respuesta-formulario{
+    min-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}

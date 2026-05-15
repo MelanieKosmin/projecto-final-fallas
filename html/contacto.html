@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fallas València</title>
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lavishly+Yours&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script defer src="../js/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">
+            <h1>Fallas <span>València</span></h1>
+        </a>
+
+        <button class="menu-hamburguesa" id="menuHamburguesa">☰</button>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html#crida">Crida</a></li>
+                <li><a href="../index.html#galeria">Fallas</a></li>
+                <li><a href="../index.html#crema">Cremà</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacto-fondo">
+        <video class="video-fondo" autoplay muted loop playsinline>
+            <source src="../multimedia/fallas-video.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+
+        
+        <section class="contacto-superpuesto">
+            <div class="formulario-contenedor">
+                <h2>Contacto</h2>
+
+                <p class="texto-contacto">
+                    Podés escribirnos para consultar sobre eventos, horarios, actividades, ubicación de monumentos falleros o para enviarnos comentarios y sugerencias sobre las Fallas de València.
+                </p>
+
+                <form id="formContacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Escribí tu nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Escribí tu email" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+
+                    <p id="respuestaFormulario" class="respuesta-formulario"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

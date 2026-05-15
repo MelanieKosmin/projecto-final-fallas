@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Miranda Sans", sans-serif;
+    background-color: #fff8e8;
+    color: #222;
+}
+
+img,
+video{
+    width: 100%;
+    display: block;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffd447;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+header a{
+    text-decoration: none;
+
+}
+
+h1{
+    font-size: 32px;
+    font-weight: normal;
+    color: #ef4135;
+}
+
+h1 span{
+    color: #111;
+}
+
+/* NAV */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a{
+    color: #111;
+    font-weight: bold;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+nav a.active{
+    color: #ef4135;
+}
+
+/* MENU */
+.menu-hamburguesa{
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* MAIN */
+main{
+    padding-top: 80px; /* pone todo el contenido del main 80px mas hacia abajo para que no se oculte con el header */
+}
+
+
+/* SECCIONES */
+.seccion{
+    display: none;
+    padding: 40px 20px;
+}
+
+.seccion.visible{
+    display: block;
+}
+
+
+
+@media (max-width: 768px){
+    
+
+    header{
+        height: 75px;
+    }
+
+    main{
+        padding-top: 75px;
+    }
+
+
+    .menu-hamburguesa{
+        display: block;
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 20px;
+        background: #ffd447;
+        padding: 15px;
+    }
+
+    nav.mostrar{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+}
